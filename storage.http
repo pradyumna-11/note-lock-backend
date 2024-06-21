@@ -1,0 +1,138 @@
+POST http://localhost:3001/sign-up/
+Content-Type: application/json
+
+{
+    "username" : "vamsiOff",
+    "email" : "vamsidevarapalli2005off@gmail.com",
+    "password" : "12345"
+}
+
+
+###
+GET http://localhost:3001/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzZmViZTgyNi1mNTU5LTQ3NjEtYTY0Ny04NzI1NjU3Nzg1YTgiLCJpYXQiOjE3MTg1MjEwODR9.uy7yy2Y3C24V8jdyEPX6K4OkCGTltlDcObsv1sZO6sE
+
+###
+GET http://localhost:3001/get-user-id/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg2OTAyNTJ9.UVlDKb0eRpeWTLqZMB8KfoBt3uIlOrEAJeDVITjKb_E
+
+
+###
+POST http://localhost:3001/verify-password/82d35429-c09f-448f-87f5-4fe86c8ed0ff/
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg3Njc4NTZ9.AC3VbFE21b5T5MUsYBgPnHL8f-TDo7Pql_Lw6zj89TQ
+
+{
+    "password" : "abdf"
+}
+
+###
+POST http://localhost:3001/login/ 
+Content-Type: application/json
+
+{
+    "username":"vamsiOff",
+    "password" : "12345"
+}
+
+###
+POST http://localhost:3001/forget-password/ 
+Content-Type: application/json 
+
+{
+    "email" : "pradyusikhakolli12345@gmail.com",
+    "password" : "pradyumna"
+}
+
+###
+GET http://localhost:3001/notes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg3Njc4NTZ9.AC3VbFE21b5T5MUsYBgPnHL8f-TDo7Pql_Lw6zj89TQ
+
+###
+GET http://localhost:3001/notes/25a89dcf-d33a-41e2-89f0-4f8a0a1f109c/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg3Njc4NTZ9.AC3VbFE21b5T5MUsYBgPnHL8f-TDo7Pql_Lw6zj89TQ
+
+###
+POST http://localhost:3001/new-note/82d35429-c09f-448f-87f5-4fe86c8ed0ff/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg2OTAyNTJ9.UVlDKb0eRpeWTLqZMB8KfoBt3uIlOrEAJeDVITjKb_E
+
+{
+    "title" : "Code Craft",
+    "description" : "This is the third code craft"
+}
+
+###
+PUT http://localhost:3001/new-note/bfef3731-78c0-4a78-a441-cc992734f44b/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmZlMWNiMy0wYmZhLTRkNTYtOWI3NS0yNWI3OWQ0OTZlMGQiLCJpYXQiOjE3MTg0NTk1Mzh9.P0MItRQ8Fjt6gCN6BG3hEKmoEWaa1gioF0EwFDJwgk4
+
+{
+    "title" : "Code Craft-6",
+    "description" : "This is the fifth code craft"
+}
+
+
+###
+DELETE http://localhost:3001/new-note/592dd1f6-5e31-49f3-bf5b-3d98b1baf216/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmZlMWNiMy0wYmZhLTRkNTYtOWI3NS0yNWI3OWQ0OTZlMGQiLCJpYXQiOjE3MTg0NTk1Mzh9.P0MItRQ8Fjt6gCN6BG3hEKmoEWaa1gioF0EwFDJwgk4
+
+
+###
+GET http://localhost:3001/passwords/82d35429-c09f-448f-87f5-4fe86c8ed0ff/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg2OTAyNTJ9.UVlDKb0eRpeWTLqZMB8KfoBt3uIlOrEAJeDVITjKb_E
+
+
+###
+GET http://localhost:3001/password/b9bbd306-31c6-4db5-8799-e2215cd7b2ae/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmQzNTQyOS1jMDlmLTQ0OGYtODdmNS00ZmU4NmM4ZWQwZmYiLCJpYXQiOjE3MTg3Njc4NTZ9.AC3VbFE21b5T5MUsYBgPnHL8f-TDo7Pql_Lw6zj89TQ
+
+###
+POST http://localhost:3001/passwords/57bfd461-9790-44c1-8841-41a0447a6f62/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmZlMWNiMy0wYmZhLTRkNTYtOWI3NS0yNWI3OWQ0OTZlMGQiLCJpYXQiOjE3MTg0NTk1Mzh9.P0MItRQ8Fjt6gCN6BG3hEKmoEWaa1gioF0EwFDJwgk4
+
+{
+    "username" : "Vamsi520",
+    "website" : "www.vamsipcc.com",
+    "password" : "MyHeartIsPCC"
+}
+
+###
+PUT http://localhost:3001/passwords/1d784495-989a-45da-b8ec-8cd3e4e097c0/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmZlMWNiMy0wYmZhLTRkNTYtOWI3NS0yNWI3OWQ0OTZlMGQiLCJpYXQiOjE3MTg0NTk1Mzh9.P0MItRQ8Fjt6gCN6BG3hEKmoEWaa1gioF0EwFDJwgk4
+
+{
+    "username" : "Vamsi5133",
+    "email" : "VamsiDev@gmail.comm",
+    "website" : "www.vamsipcc.co",
+    "password" : "MyHeartIsCSE"
+}
+
+###
+DELETE http://localhost:3001/passwords/1d784495-989a-45da-b8ec-8cd3e4e097c0/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4MmZlMWNiMy0wYmZhLTRkNTYtOWI3NS0yNWI3OWQ0OTZlMGQiLCJpYXQiOjE3MTg0NTk1Mzh9.P0MItRQ8Fjt6gCN6BG3hEKmoEWaa1gioF0EwFDJwgk4
+
+
+###
+POST http://localhost:3001/send-otp/
+Content-Type: application/json
+
+{
+    "email" : "vamsidevarapalli2005off@gmail.com"
+}
+
+
+###
+POST http://localhost:3001/verify-otp/ 
+Content-Type: application/json
+
+{
+    "email" : "vamsidevarapalli2005off@gmail.com",
+    "userOtp": 370048
+}
+
+
+###
+GET http://localhost:3001/all-otps/
